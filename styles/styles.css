@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.main{
+    margin: 200px auto;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(238, 30, 186, 0.952);
+    position: relative;
+}
+.cyrcle{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #008000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: movecyrcle 5s infinite;
+}
+div p{
+    line-height:200px;
+    font-size: 22px;
+}
+.second{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #008000;
+    border-radius: 0%;
+    animation: rad 3s infinite;
+    
+
+}
+
+@keyframes rad {
+    0%{background-color: #008000; border-radius: 0%;}
+    25%{background-color: #dbdf0e; border-radius: 10%;}
+    50%{background-color: #ebad05; border-radius: 25%;}
+    75%{background-color: #f3690d; border-radius: 50%;}
+    100%{background-color: #008000; border-radius: 0%;}
+}
+
+@keyframes movecyrcle {
+    0%{top: 0; left: 0;}
+    25%{top: 0; left:364px}
+    50%{top: 164px; left: 364px;}
+    75%{top: 164px; left: 0;}
+    100%{top: 0; left: 0;} 
+}
